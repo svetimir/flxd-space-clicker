@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c3004053-55bd-4ff6-8e07-ec8b3ac9ef0c" name="Default Changelist" comment="" />
+    <list default="true" id="c3004053-55bd-4ff6-8e07-ec8b3ac9ef0c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,13 +35,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="md" value="30" />
-          <entry key="py" value="223" />
+          <entry key="py" value="968" />
+          <entry key="txt" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="30" />
-          <entry key="Python" value="223" />
+          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="Python" value="968" />
         </counts>
       </usages-collector>
     </session>
@@ -48,11 +53,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+            <state relative-caret-position="394">
+              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
               <folding>
-                <marker date="1536738960554" expanded="true" signature="288:299" ph="..." />
-                <marker date="1536738960554" expanded="true" signature="310:320" ph="..." />
+                <element signature="e#248#261#0" expanded="true" />
+                <marker date="1536740931099" expanded="true" signature="310:1129" ph="..." />
+                <marker date="1536740931099" expanded="true" signature="1140:1173" ph="..." />
               </folding>
             </state>
           </provider>
@@ -63,7 +69,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor>
-                <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
+                <caret column="28" selection-start-column="28" selection-end-column="28" />
               </first_editor>
               <second_editor />
             </state>
@@ -79,6 +85,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -87,12 +96,13 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="91" />
-    <option name="y" value="46" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="168" />
+    <option name="y" value="49" />
     <option name="width" value="1188" />
     <option name="height" value="611" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -138,6 +148,34 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="flxd_space_clicker_game" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -149,14 +187,22 @@
       <option name="presentableId" value="Default" />
       <updated>1536738731433</updated>
     </task>
+    <task id="LOCAL-00001" summary="0.0.1">
+      <created>1536739244331</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1536739244331</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="91" y="46" width="1231" height="666" extended-state="0" />
+    <frame x="168" y="49" width="1188" height="611" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.123218775" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.12782608" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="1" show_stripe_button="false" />
@@ -171,11 +217,15 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Run" order="3" visible="true" weight="0.33684212" />
+      <window_info anchor="right" id="Run" order="3" weight="0.33684212" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="0.0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.0.1" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
@@ -185,7 +235,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor>
-            <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
+            <caret column="28" selection-start-column="28" selection-end-column="28" />
           </first_editor>
           <second_editor />
         </state>
@@ -193,11 +243,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        <state relative-caret-position="394">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
           <folding>
-            <marker date="1536738960554" expanded="true" signature="288:299" ph="..." />
-            <marker date="1536738960554" expanded="true" signature="310:320" ph="..." />
+            <element signature="e#248#261#0" expanded="true" />
+            <marker date="1536740931099" expanded="true" signature="310:1129" ph="..." />
+            <marker date="1536740931099" expanded="true" signature="1140:1173" ph="..." />
           </folding>
         </state>
       </provider>
