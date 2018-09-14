@@ -10,55 +10,128 @@
 # by clicking the star
 # you get star beams :)
 
-import pygame
-from pygame.locals import *
-
 appversion="v0.0.2"
+appname="FLXD SPACE CLICKER APP"
 
-class Game(object):
-    def __init__(self):
-        self._running=True
-        self.screen=None
-        self.size=self.weight,self.height=640,480
-        self.points=0
+from pygame.rect import Rect
+import pygame
+import sys
+from collections import defaultdict
 
-    def on_init(self):
-        pygame.init()
-        self.screen=pygame.display.set_mode(self.size)
-        pygame.display.set_caption("SPACE CLICKER "+appversion)
-        pygame.draw.circle(self.screen,pygame.color.THECOLORS["yellow"],(320,240),200)
-        pygame.display.update()
-        self._running=True
+class GameObject:
+    def __init__(self, x, y, w, h, speed=(0,0)):
+        self.bounds = Rect(x, y, w, h)
+        self.speed = speed
 
-    def on_event(self,event):
-        if event.type==pygame.QUIT:
-            self._running=False
-        elif event.type==pygame.MOUSEBUTTONDOWN:
-            self.points+=1
-        pygame.display.update()
+    @property
+    def left(self):
+        return self.bounds.left
 
-    def on_loop(self):
+    @property
+    def right(self):
+        return self.bounds.right
+
+    @property
+    def top(self):
+        return self.bounds.top
+
+    @property
+    def bottom(self):
+        return self.bounds.bottom
+
+    @property
+    def width(self):
+        return self.bounds.width
+
+    @property
+    def height(self):
+        return self.bounds.height
+
+    @property
+    def center(self):
+        return self.bounds.center
+
+    @property
+    def centerx(self):
+        return self.bounds.centerx
+
+    @property
+    def centery(self):
+        return self.bounds.centery
+
+    def draw(self, surface):
         pass
 
-    def on_render(self):
-        pygame.display.update()
+    def move(self, dx, dy):
+        self.bounds = self.bounds.move(dx, dy)
 
-    def on_cleanup(self):
-        pygame.quit()
+    def update(self):
+        if self.speed == [0, 0]:
+            return
 
-    def on_execute(self):
-        if self.on_init()==False:
-            self._running=False
-        while(self._running):
-            for event in pygame.event.get():
-                self.on_event(event)
-            self.on_loop()
-            self.on_render()
-        self.on_cleanup()
+        self.move(*self.speed)
+
+class Game:
+    def __init__(self,
+                 caption,
+                 width,
+                 height,
+                 back_image_filename,
+                 frame_rate):
+        self.background_image = \
+            pygame.image.load(back_image_filename)
+        self.frame_rate = frame_rate
+        self.game_over = False
+        self.objects = []
+        pygame.mixer.pre_init(44100, 16, 2, 4096)
+        pygame.init()
+        pygame.font.init()
+        self.surface = pygame.display.set_mode((width, height))
+        pygame.display.set_caption(caption)
+        self.clock = pygame.time.Clock()
+        self.keydown_handlers = defaultdict(list)
+        self.keyup_handlers = defaultdict(list)
+        self.mouse_handlers = []
+
+    def update(self):
+        for o in self.objects:
+            o.update()
+
+    def draw(self):
+        for o in self.objects:
+            o.draw(self.surface)
+
+    def handle_events(self):
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
+            elif event.type == pygame.KEYDOWN:
+                for handler in self.keydown_handlers[event.key]:
+                    handler(event.key)
+            elif event.type == pygame.KEYUP:
+                for handler in self.keydown_handlers[event.key]:
+                    handler(event.key)
+            elif event.type in (pygame.MOUSEBUTTONDOWN,
+                                pygame.MOUSEBUTTONUP,
+                                pygame.MOUSEMOTION):
+                for handler in self.mouse_handlers:
+                    handler(event.type, event.pos)
+
+    def run(self):
+        while not self.game_over:
+            self.surface.blit(self.background_image, (0, 0))
+
+            self.handle_events()
+            self.update()
+            self.draw()
+
+            pygame.display.update()
+            self.clock.tick(self.frame_rate)
 
 def main():
-    g=Game()
-    g.on_execute()
+    g=Game(appname,640,480,"back-0.0.2.jpg",24)
+    g.run()
 
 if __name__=="__main__":
     main()

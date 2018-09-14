@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c3004053-55bd-4ff6-8e07-ec8b3ac9ef0c" name="Default Changelist" comment="0.0.2">
+    <list default="true" id="c3004053-55bd-4ff6-8e07-ec8b3ac9ef0c" name="Default Changelist" comment="0.0.2, misc">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back-0.0.2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/flxd_space_clicker_game.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/flxd_space_clicker_game.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -15,8 +18,12 @@
     <session id="302861269">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.63" value="1" />
+          <entry key="project.open.time.64" value="1" />
+          <entry key="project.open.time.72" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -35,30 +42,32 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="md" value="30" />
-          <entry key="py" value="2060" />
-          <entry key="txt" value="11" />
+          <entry key="py" value="2205" />
+          <entry key="txt" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="30" />
-          <entry key="PLAIN_TEXT" value="11" />
-          <entry key="Python" value="2060" />
+          <entry key="PLAIN_TEXT" value="23" />
+          <entry key="Python" value="2205" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+            <state relative-caret-position="169">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
               <folding>
-                <element signature="e#248#261#0" expanded="true" />
-                <marker date="1536744468123" expanded="true" signature="356:1455" ph="..." />
-                <marker date="1536744468123" expanded="true" signature="1466:1499" ph="..." />
+                <element signature="e#328#356#0" expanded="true" />
+                <marker date="1536919871923" expanded="true" signature="2165:2170" ph="..." />
+                <marker date="1536919871923" expanded="true" signature="3322:3323" ph="..." />
+                <marker date="1536919871923" expanded="true" signature="3334:3395" ph="..." />
               </folding>
             </state>
           </provider>
@@ -98,8 +107,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="134" />
-    <option name="y" value="34" />
+    <option name="x" value="159" />
+    <option name="y" value="28" />
     <option name="width" value="1188" />
     <option name="height" value="641" />
   </component>
@@ -202,30 +211,46 @@
       <option name="project" value="LOCAL" />
       <updated>1536740988561</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="0.0.2">
+      <created>1536744489830</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1536744489830</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="134" y="34" width="1188" height="641" extended-state="0" />
+    <frame x="159" y="28" width="1188" height="641" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.15826087" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.16134752" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.3280943" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="9" />
+      <window_info anchor="bottom" id="TODO" order="9" weight="0.3280943" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Run" order="3" weight="0.3359929" />
+      <window_info active="true" anchor="right" id="Run" order="3" visible="true" weight="0.3359929" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -240,6 +265,20 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/pg-sample.py" />
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding>
+            <element signature="e#328#356#0" expanded="true" />
+            <marker date="1536919871923" expanded="true" signature="2165:2170" ph="..." />
+            <marker date="1536919871923" expanded="true" signature="3322:3323" ph="..." />
+            <marker date="1536919871923" expanded="true" signature="3334:3395" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -247,28 +286,6 @@
             <caret column="28" selection-start-column="28" selection-end-column="28" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pg-sample.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
-          <folding>
-            <element signature="e#559#606#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding>
-            <element signature="e#248#261#0" expanded="true" />
-            <marker date="1536744468123" expanded="true" signature="356:1455" ph="..." />
-            <marker date="1536744468123" expanded="true" signature="1466:1499" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
