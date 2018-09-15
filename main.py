@@ -3,7 +3,7 @@
 # AUTHOR: fluxoid, ifi@yandex.ru
 # VERSION: 0.0.2
 # STARTED: 12.09.2018
-# LATEST FILE REVISION: 12.09.2018
+# LATEST FILE REVISION: 14.09.2018
 # PURPOSE: Project "space clicker" main file
 # DESCRIPTION: Space clicker project main file
 
@@ -11,7 +11,7 @@
 # you get star beams :)
 
 appversion="v0.0.2"
-appname="FLXD SPACE CLICKER APP"
+appname="FLXD SPACE CLICKER "
 
 from pygame.rect import Rect
 import pygame
@@ -129,8 +129,11 @@ class Game:
             pygame.display.update()
             self.clock.tick(self.frame_rate)
 
+class TextObject:
+    pass
+
 def main():
-    g=Game(appname,640,480,"back-0.0.2.jpg",24)
+    g=Game(appname+appversion,640,480,"back-0.0.2.jpg",24)
     g.run()
 
 if __name__=="__main__":
